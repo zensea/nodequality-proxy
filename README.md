@@ -16,30 +16,30 @@
 
 ```bash
 # 使用 GitHub 镜像（推荐国内用户）
-curl -fsSL https://raw.githubusercontent.com/zensea/nodequality-proxy/main/nodequality-proxy.sh | bash -s ghproxy
+wget -N https://raw.githubusercontent.com/zensea/nodequality-proxy/main/nodequality-proxy.sh && bash nodequality-proxy.sh ghproxy
 
 # 使用本地代理
-curl -fsSL https://raw.githubusercontent.com/zensea/nodequality-proxy/main/nodequality-proxy.sh | bash -s proxy http://127.0.0.1:7890
+wget -N https://raw.githubusercontent.com/zensea/nodequality-proxy/main/nodequality-proxy.sh && bash nodequality-proxy.sh proxy http://127.0.0.1:7890
 
 # 直接连接
-curl -fsSL https://raw.githubusercontent.com/zensea/nodequality-proxy/main/nodequality-proxy.sh | bash
+wget -N https://raw.githubusercontent.com/zensea/nodequality-proxy/main/nodequality-proxy.sh && bash nodequality-proxy.sh
 ```
 
 **国内用户（如无法访问 GitHub）：**
 ```bash
 # 使用 GitLab 镜像仓库
-curl -fsSL https://gitlab.com/dabao/nodequality-proxy/-/raw/main/nodequality-proxy.sh | bash -s ghproxy
+wget -N https://gitlab.com/dabao/nodequality-proxy/-/raw/main/nodequality-proxy.sh && bash nodequality-proxy.sh ghproxy
 ```
 
 ### 下载后使用
 
 ```bash
 # 下载脚本（GitHub）
-curl -fsSL https://raw.githubusercontent.com/zensea/nodequality-proxy/main/nodequality-proxy.sh -o nodequality-proxy.sh
+wget -N https://raw.githubusercontent.com/zensea/nodequality-proxy/main/nodequality-proxy.sh
 chmod +x nodequality-proxy.sh
 
 # 国内用户可使用 GitLab
-# curl -fsSL https://gitlab.com/dabao/nodequality-proxy/-/raw/main/nodequality-proxy.sh -o nodequality-proxy.sh
+# wget -N https://gitlab.com/dabao/nodequality-proxy/-/raw/main/nodequality-proxy.sh
 
 # 运行
 ./nodequality-proxy.sh ghproxy
